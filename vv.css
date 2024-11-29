@@ -1,0 +1,295 @@
+/* Animated Text Styling */
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 0; /* Start from the left-hand side */
+  transform: translateY(-50%); /* Vertically center the text */
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 10px;
+  animation: slideInFromLeft 2s ease-out forwards; /* Sliding from left animation */
+  width: 100%;
+  max-width: 800px; /* Limit max width */
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); /* Center horizontally */
+  text-align: center;
+}
+
+.animated-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+/* Keyframes for Animation: Slide In from Left */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%) translateY(-50%); /* Start off-screen to the left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(-50%); /* End at the normal position */
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .slider-text {
+    padding: 15px;
+  }
+
+  .animated-text {
+    font-size: 1.8rem; /* Slightly smaller font */
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-text {
+    padding: 10px;
+  }
+
+  .animated-text {
+    font-size: 1.5rem; /* Smaller font on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-text {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .animated-text {
+    font-size: 1.3rem; /* Even smaller font on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-text {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .animated-text {
+    font-size: 1.1rem; /* Very small font for very small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+#mission-vision {
+  background-color: #0e356f; /* Use the color code you provided */
+  color: white;
+  margin-top: 10px;
+}
+
+/* Mission & Vision Box Styling */
+.mission-vision-box {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-vision-box h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.mission-vision-box p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Hover Effect for Containers */
+.mission-vision-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .mission-vision-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission-vision-box p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-vision-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .mission-vision-box p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mission-vision-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .mission-vision-box p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+/* Programs and Services Section */
+#programs-services {
+  background-color: #0e356f; /* Your custom color */
+  color: white;
+  padding: 60px 0;
+  margin-top: 10px;
+}
+
+#programs-services h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.service-box {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.service-box p {
+  font-size: 1.1rem;
+}
+
+/* Hover Effect for Service Boxes */
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .service-title {
+    font-size: 1.6rem;
+  }
+
+  .service-box p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 1.4rem;
+  }
+
+  .service-box p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-box p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  background-color: #0e356f; /* Your custom blue color */
+  padding: 15px 0;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 20px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Light color on hover */
+  background-color: #0c51ab; /* Darken background on hover */
+  border-radius: 5px;
+}
+
+/* Active link style */
+.navbar .navbar-nav .nav-link.active {
+  color: #f8f9fa;
+  background-color: #1156af; /* Darkened background for active link */
+  border-radius: 5px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .navbar .navbar-toggler {
+    border-color: #ffffff; /* White border for the toggle icon */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.2rem; /* Smaller brand text on mobile */
+   
+  }
+}
